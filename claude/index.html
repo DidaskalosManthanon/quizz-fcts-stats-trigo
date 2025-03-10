@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM de Mathématiques Niveau Collège</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Quiz de Mathématiques</h1>
+            <p>Niveau Collège: Fonctions, Statistiques et Trigonométrie</p>
+        </header>
+
+        <div id="quiz-container">
+            <div id="question-container">
+                <!-- Les questions seront insérées ici par JavaScript -->
+            </div>
+            
+            <div id="navigation">
+                <button id="prev-btn" class="nav-btn" disabled>Question précédente</button>
+                <span id="question-number">Question 1/10</span>
+                <button id="next-btn" class="nav-btn">Question suivante</button>
+            </div>
+
+            <button id="submit-btn">Soumettre mes réponses</button>
+        </div>
+
+        <div id="results-container" class="hidden">
+            <h2>Résultats</h2>
+            <p>Votre score: <span id="score">0</span>/10</p>
+            <div id="detailed-results">
+                <!-- Les résultats détaillés seront insérés ici par JavaScript -->
+            </div>
+            <button id="restart-btn">Refaire le quiz</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Quiz de Mathématiques - Niveau Collège</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

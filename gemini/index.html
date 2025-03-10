@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QCM Mathématiques Collège</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>QCM Mathématiques Collège</h1>
+    <form id="quiz-form">
+      <div class="question">
+        <p>1. Soit f(x) = 2x + 3. Quelle est l'image de 4 ?</p>
+        <label><input type="radio" name="q1" value="11"> 11</label>
+        <label><input type="radio" name="q1" value="9"> 9</label>
+        <label><input type="radio" name="q1" value="7"> 7</label>
+      </div>
+      <div class="question">
+        <p>2. Soit L = {9, 7, 7, 7, 7, 4, 4, 4, 5, 5, 3, 3, 3, 3, 3, 2, 2, 1}. Quelle est la médiane ?</p>
+        <label><input type="radio" name="q2" value="4"> 4</label>
+        <label><input type="radio" name="q2" value="5"> 5</label>
+        <label><input type="radio" name="q2" value="3"> 3</label>
+      </div>
+      <div class="question">
+        <p>3. Dans un triangle rectangle, le cosinus d'un angle aigu est égal à :</p>
+        <label><input type="radio" name="q3" value="adjacent/hypotenuse"> Côté adjacent / Hypothénuse</label>
+        <label><input type="radio" name="q3" value="oppose/hypotenuse"> Côté opposé / Hypothénuse</label>
+        <label><input type="radio" name="q3" value="oppose/adjacent"> Côté opposé / Côté adjacent</label>
+      </div>
+      <button type="submit">Valider</button>
+    </form>
+    <div id="resultat" class="hidden"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

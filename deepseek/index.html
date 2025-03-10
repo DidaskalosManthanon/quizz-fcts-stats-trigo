@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM de Mathématiques</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>QCM de Mathématiques</h1>
+        <form id="quizForm">
+            <!-- Question 1 : Fonctions -->
+            <div class="question">
+                <p>1. Quelle est l'image de 2 par la fonction f(x) = 2x + 3 ?</p>
+                <input type="radio" name="q1" value="a"> a) 5<br>
+                <input type="radio" name="q1" value="b"> b) 7<br>
+                <input type="radio" name="q1" value="c"> c) 9<br>
+            </div>
+
+            <!-- Question 2 : Statistiques -->
+            <div class="question">
+                <p>2. Quelle est la médiane de la liste L = {9, 7, 7, 7, 7, 4, 4, 4, 5, 5, 3, 3, 3, 3, 3, 2, 2, 1} ?</p>
+                <input type="radio" name="q2" value="a"> a) 4<br>
+                <input type="radio" name="q2" value="b"> b) 5<br>
+                <input type="radio" name="q2" value="c"> c) 7<br>
+            </div>
+
+            <!-- Question 3 : Trigonométrie -->
+            <div class="question">
+                <p>3. Quel est le cosinus d'un angle de 60° ?</p>
+                <input type="radio" name="q3" value="a"> a) 0.5<br>
+                <input type="radio" name="q3" value="b"> b) √3/2<br>
+                <input type="radio" name="q3" value="c"> c) 1<br>
+            </div>
+
+            <button type="button" onclick="checkAnswers()">Soumettre</button>
+        </form>
+
+        <div id="results">
+            <h2>Résultats</h2>
+            <p id="score"></p>
+            <p id="correctAnswers"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

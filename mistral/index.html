@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCM Mathématiques</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.geogebra.org/apps/deployggb.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>QCM Mathématiques</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. Quelle est l'image de 2 par la fonction f(x) = 2x + 3 ?</p>
+                <label><input type="radio" name="q1" value="a"> a) 4</label>
+                <label><input type="radio" name="q1" value="b"> b) 7</label>
+                <label><input type="radio" name="q1" value="c"> c) 5</label>
+            </div>
+            <div class="question">
+                <p>2. Quel est l'antécédent de 11 par la fonction g(x) = 3x² - 5 ?</p>
+                <label><input type="radio" name="q2" value="a"> a) 2</label>
+                <label><input type="radio" name="q2" value="b"> b) 1</label>
+                <label><input type="radio" name="q2" value="c"> c) 3</label>
+            </div>
+            <div class="question">
+                <p>3. Quelle est la moyenne de la série L = {9, 7, 7, 7, 7, 4, 4, 4, 5, 5, 3, 3, 3, 3, 3, 2, 2, 1} ?</p>
+                <label><input type="radio" name="q3" value="a"> a) 4.5</label>
+                <label><input type="radio" name="q3" value="b"> b) 4.33</label>
+                <label><input type="radio" name="q3" value="c"> c) 5</label>
+            </div>
+            <div class="question">
+                <p>4. Quel est le cosinus de 60 degrés ?</p>
+                <label><input type="radio" name="q4" value="a"> a) 0.5</label>
+                <label><input type="radio" name="q4" value="b"> b) 1</label>
+                <label><input type="radio" name="q4" value="c"> c) 0</label>
+            </div>
+            <button type="button" onclick="checkAnswers()">Soumettre</button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
